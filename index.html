@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urban Tandoor Collective — Bold Flavours. Urban Vibes.</title>
+  <meta name="description" content="Experience Delhi's most vibrant fusion dining spot at Urban Tandoor Collective, Hauz Khas Village. Modern Indian cuisine meets urban nightlife.">
+  <meta name="keywords" content="restaurant, Delhi, Indian fusion, Hauz Khas, fine dining, rooftop restaurant, tandoor, urban dining">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Lucide Icons CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide-static@latest/font/lucide.min.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="nav-logo-icon">🔥</div>
+        <div class="nav-logo-text">Urban <span>Tandoor</span></div>
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#experience">Experience</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#testimonials">Reviews</a>
+        <a href="#contact">Contact</a>
+        <a href="#reservation" class="nav-reserve-btn">Reserve</a>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO SECTION
+       ============================================ -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=80" alt="Urban restaurant ambiance with warm lighting">
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          📍 Hauz Khas Village, New Delhi
+        </div>
+        <h1 class="hero-title">
+          Bold Flavours.<br><span class="accent">Urban Vibes.</span>
+        </h1>
+        <p class="hero-tagline">"Where Street Meets Signature Flavours"</p>
+        <p class="hero-subtitle">
+          Experience Delhi's most vibrant fusion dining spot — where traditional Indian flavours collide with global culinary innovation.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn btn-primary" id="heroBookBtn">
+            🍽️ Book a Table
+          </button>
+          <a href="#menu" class="btn btn-outline">
+            📜 Explore Menu
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT SECTION
+       ============================================ -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image-wrapper reveal-left">
+          <div class="about-image">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80" alt="Modern restaurant interior with warm ambiance">
+          </div>
+          <div class="about-float-card">
+            <div class="icon">🏆</div>
+            <div class="text">
+              <h4>8+ Years</h4>
+              <p>Serving Bold Flavours</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text reveal-right">
+          <span class="section-label">Our Story</span>
+          <h2 class="section-title">Where Tradition Meets the<br>Urban Palate</h2>
+          <h3>"Born from the streets, refined for the soul."</h3>
+          <p>
+            Urban Tandoor Collective was born in 2017 from a simple idea: what if Delhi's legendary street food met world-class culinary techniques? Nestled in the vibrant lanes of Hauz Khas Village, our restaurant has become a landmark for food enthusiasts seeking something beyond ordinary.
+          </p>
+          <p>
+            Our chefs blend traditional Indian spices with global cooking methods — think truffle-infused butter chicken, wasabi tikka, and deconstructed chaat. Every dish tells a story of innovation rooted in heritage.
+          </p>
+          <div class="about-features">
+            <div class="about-feature">
+              <span class="feat-icon">🌆</span>
+              <span class="feat-text">Rooftop Dining</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">🎶</span>
+              <span class="feat-text">Live Music Nights</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">👨‍🍳</span>
+              <span class="feat-text">Award-Winning Chef</span>
+            </div>
+            <div class="about-feature">
+              <span class="feat-icon">🍸</span>
+              <span class="feat-text">Craft Cocktails</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       MENU SECTION
+       ============================================ -->
+  <section class="menu" id="menu">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Our Menu</span>
+        <h2 class="section-title">Curated for the Bold</h2>
+        <p class="section-subtitle">Each dish is a story of heritage reimagined — from familiar street classics to signature fusion creations.</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="menu-filters reveal">
+        <button class="menu-filter-btn active" data-filter="all">All</button>
+        <button class="menu-filter-btn" data-filter="starters">Street Starters</button>
+        <button class="menu-filter-btn" data-filter="mains">Fusion Mains</button>
+        <button class="menu-filter-btn" data-filter="grill">Grill & Tandoor</button>
+        <button class="menu-filter-btn" data-filter="desserts">Desserts</button>
+        <button class="menu-filter-btn" data-filter="drinks">Signature Drinks</button>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <!-- STREET STARTERS -->
+        <div class="menu-card reveal delay-1" data-category="starters">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Truffle Pani Puri Shots</h3>
+            <span class="menu-card-price">₹350</span>
+          </div>
+          <p class="menu-card-desc">Classic pani puri elevated with truffle-infused water and spiced potato mousse.</p>
+          <span class="menu-card-tag">Chef's Pick</span>
+        </div>
+
+        <div class="menu-card reveal delay-2" data-category="starters">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Wasabi Dahi Kebab</h3>
+            <span class="menu-card-price">₹320</span>
+          </div>
+          <p class="menu-card-desc">Melt-in-mouth dahi kebab with a Japanese wasabi glaze and pickled ginger.</p>
+        </div>
+
+        <div class="menu-card reveal delay-3" data-category="starters">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Smoked Papdi Chaat Tower</h3>
+            <span class="menu-card-price">₹280</span>
+          </div>
+          <p class="menu-card-desc">Deconstructed chaat layered with smoked chutneys, pomegranate, and sev crisp.</p>
+        </div>
+
+        <div class="menu-card reveal delay-4" data-category="starters">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Charcoal Paneer Tikka Skewers</h3>
+            <span class="menu-card-price">₹380</span>
+          </div>
+          <p class="menu-card-desc">Activated charcoal marinated paneer with roasted bell pepper and chimichurri.</p>
+          <span class="menu-card-tag">Bestseller</span>
+        </div>
+
+        <!-- FUSION MAINS -->
+        <div class="menu-card reveal delay-1" data-category="mains">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Butter Chicken Risotto</h3>
+            <span class="menu-card-price">₹650</span>
+          </div>
+          <p class="menu-card-desc">Creamy arborio rice finished with our signature makhani sauce and tender chicken.</p>
+          <span class="menu-card-tag">Signature</span>
+        </div>
+
+        <div class="menu-card reveal delay-2" data-category="mains">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Rogan Josh Tacos</h3>
+            <span class="menu-card-price">₹580</span>
+          </div>
+          <p class="menu-card-desc">Slow-cooked Kashmiri lamb in handmade corn tortillas with raita slaw.</p>
+        </div>
+
+        <div class="menu-card reveal delay-3" data-category="mains">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Biryani Arancini Balls</h3>
+            <span class="menu-card-price">₹520</span>
+          </div>
+          <p class="menu-card-desc">Crispy fried Hyderabadi biryani balls with saffron aioli and raita dip.</p>
+        </div>
+
+        <div class="menu-card reveal delay-4" data-category="mains">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Tandoori Salmon Bowl</h3>
+            <span class="menu-card-price">₹780</span>
+          </div>
+          <p class="menu-card-desc">Norwegian salmon in tandoori marinade over coconut rice, mango salsa, and micro greens.</p>
+        </div>
+
+        <!-- GRILL & TANDOOR -->
+        <div class="menu-card reveal delay-1" data-category="grill">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Smoked Lamb Chops</h3>
+            <span class="menu-card-price">₹890</span>
+          </div>
+          <p class="menu-card-desc">Applewood-smoked lamb chops with black garlic mash and rosemary jus.</p>
+          <span class="menu-card-tag">Premium</span>
+        </div>
+
+        <div class="menu-card reveal delay-2" data-category="grill">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Tandoori Chicken Supreme</h3>
+            <span class="menu-card-price">₹550</span>
+          </div>
+          <p class="menu-card-desc">24-hour marinated free-range chicken, char-grilled in our clay tandoor.</p>
+        </div>
+
+        <div class="menu-card reveal delay-3" data-category="grill">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Seekh Kebab Platter</h3>
+            <span class="menu-card-price">₹480</span>
+          </div>
+          <p class="menu-card-desc">Hand-minced lamb seekh kebab trio — classic, spicy jalapeño, and cheese-stuffed.</p>
+        </div>
+
+        <div class="menu-card reveal delay-4" data-category="grill">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Achari Paneer Steak</h3>
+            <span class="menu-card-price">₹420</span>
+          </div>
+          <p class="menu-card-desc">Thick-cut paneer steak in pickle-spiced marinade, grilled and served with balsamic drizzle.</p>
+        </div>
+
+        <!-- DESSERTS -->
+        <div class="menu-card reveal delay-1" data-category="desserts">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Gulab Jamun Cheesecake</h3>
+            <span class="menu-card-price">₹380</span>
+          </div>
+          <p class="menu-card-desc">New York-style cheesecake infused with gulab jamun syrup and rose petals.</p>
+          <span class="menu-card-tag">Must Try</span>
+        </div>
+
+        <div class="menu-card reveal delay-2" data-category="desserts">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Saffron Crème Brûlée</h3>
+            <span class="menu-card-price">₹340</span>
+          </div>
+          <p class="menu-card-desc">Rich custard with Kashmiri saffron, torched to a perfect golden caramel.</p>
+        </div>
+
+        <div class="menu-card reveal delay-3" data-category="desserts">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Chai Tiramisu</h3>
+            <span class="menu-card-price">₹360</span>
+          </div>
+          <p class="menu-card-desc">Italian classic reimagined with masala chai, cardamom, and jaggery mascarpone.</p>
+        </div>
+
+        <!-- SIGNATURE DRINKS -->
+        <div class="menu-card reveal delay-1" data-category="drinks">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Smoked Old Fashioned</h3>
+            <span class="menu-card-price">₹550</span>
+          </div>
+          <p class="menu-card-desc">Bourbon infused with Indian spices, served under a dome of applewood smoke.</p>
+          <span class="menu-card-tag">Signature</span>
+        </div>
+
+        <div class="menu-card reveal delay-2" data-category="drinks">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Mango Jalapeño Margarita</h3>
+            <span class="menu-card-price">₹480</span>
+          </div>
+          <p class="menu-card-desc">Alphonso mango, lime, and a fiery jalapeño kick with Tajin-rimmed glass.</p>
+        </div>
+
+        <div class="menu-card reveal delay-3" data-category="drinks">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Rose Cardamom Spritz</h3>
+            <span class="menu-card-price">₹420</span>
+          </div>
+          <p class="menu-card-desc">Sparkling rose water with cardamom syrup, prosecco, and edible flowers.</p>
+        </div>
+
+        <div class="menu-card reveal delay-4" data-category="drinks">
+          <div class="menu-card-header">
+            <h3 class="menu-card-name">Saffron Lassi Martini</h3>
+            <span class="menu-card-price">₹450</span>
+          </div>
+          <p class="menu-card-desc">A velvety blend of yogurt-based lassi with vodka, saffron, and pistachio dust.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SIGNATURE EXPERIENCE SECTION
+       ============================================ -->
+  <section class="experience" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Signature Experiences</span>
+        <h2 class="section-title">More Than Just a Meal</h2>
+        <p class="section-subtitle">Immerse yourself in curated experiences that make every visit unforgettable.</p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="experience-card reveal-scale delay-1">
+          <img src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&q=80" alt="Live music performance">
+          <div class="experience-card-overlay">
+            <div class="experience-card-icon">🎶</div>
+            <h3>Live Music Nights</h3>
+            <p>Every Friday & Saturday, our stage comes alive with soulful acoustic sets, jazz ensembles, and indie performers.</p>
+          </div>
+        </div>
+
+        <div class="experience-card reveal-scale delay-2">
+          <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?w=600&q=80" alt="Rooftop dining under the stars">
+          <div class="experience-card-overlay">
+            <div class="experience-card-icon">🌆</div>
+            <h3>Rooftop Dining</h3>
+            <p>Dine under the Delhi sky on our open-air rooftop — city lights, starry nights, and unbeatable views of Hauz Khas.</p>
+          </div>
+        </div>
+
+        <div class="experience-card reveal-scale delay-3">
+          <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=600&q=80" alt="Chef preparing tasting menu">
+          <div class="experience-card-overlay">
+            <div class="experience-card-icon">👨‍🍳</div>
+            <h3>Chef's Tasting Menu</h3>
+            <p>A curated 7-course journey through our most inventive dishes, paired with handcrafted cocktails and sommelier picks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       GALLERY SECTION
+       ============================================ -->
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Gallery</span>
+        <h2 class="section-title">A Glimpse Inside</h2>
+        <p class="section-subtitle">From the kitchen to the rooftop — every corner tells a story.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item reveal-scale delay-1">
+          <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&q=80" alt="Beautifully plated fusion dishes">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal-scale delay-2">
+          <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Premium food plating">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal-scale delay-3">
+          <img src="https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80" alt="Signature cocktails at the bar">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal-scale delay-4">
+          <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?w=600&q=80" alt="Restaurant ambiance with warm lighting">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+        <div class="gallery-item reveal-scale delay-5">
+          <img src="https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=600&q=80" alt="Crowd enjoying the vibe">
+          <div class="gallery-item-overlay"><span>🔍</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <img src="" alt="" id="lightboxImg">
+  </div>
+
+  <!-- ============================================
+       TESTIMONIALS
+       ============================================ -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">What People Say</span>
+        <h2 class="section-title">Voices of Our Guests</h2>
+        <p class="section-subtitle">Don't take our word for it — hear from the people who've experienced it.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal delay-1">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">A hidden gem in Delhi nightlife! The rooftop view is breathtaking and the food is absolutely mind-blowing. The butter chicken risotto changed my life.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div class="testimonial-author-info">
+              <h4>Rohit Kapoor</h4>
+              <p>Food Blogger, Delhi</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Perfect mix of taste and vibe. Came for a date night and ended up coming back every weekend. The cocktails are creative and the ambiance is unmatched.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">AS</div>
+            <div class="testimonial-author-info">
+              <h4>Ananya Sharma</h4>
+              <p>Instagram Influencer</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">Loved the rooftop experience! We celebrated our anniversary here and it was magical. The chef's tasting menu is a must-try for any food lover.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">VP</div>
+            <div class="testimonial-author-info">
+              <h4>Vivek & Priya</h4>
+              <p>Regular Guests</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-4">
+          <div class="testimonial-quote">"</div>
+          <p class="testimonial-text">As a chef myself, I'm impressed by their creativity. The fusion is authentic, not gimmicky. Every dish has depth and intention. Truly next-level dining.</p>
+          <div class="testimonial-stars">★★★★★</div>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MJ</div>
+            <div class="testimonial-author-info">
+              <h4>Chef Manish Joshi</h4>
+              <p>Culinary Consultant</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       RESERVATION & HOURS
+       ============================================ -->
+  <section class="reservation" id="reservation">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Reserve Your Table</span>
+        <h2 class="section-title">Secure Your Spot</h2>
+        <p class="section-subtitle">Book ahead to guarantee the best experience — especially for rooftop seating and weekends.</p>
+      </div>
+
+      <div class="reservation-wrapper">
+        <!-- Left: Info + Hours -->
+        <div class="reservation-info reveal-left">
+          <span class="section-label">Opening Hours</span>
+          <h3 class="section-title" style="font-size: 1.8rem;">When to Visit</h3>
+          <p class="section-subtitle">We're open every day of the week. Weekend hours extend for late-night vibes.</p>
+
+          <div class="hours-card">
+            <h4>🕐 Hours of Operation</h4>
+            <div class="hours-row">
+              <span class="day">Monday</span>
+              <span class="time">12:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Tuesday</span>
+              <span class="time">12:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Wednesday</span>
+              <span class="time">12:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Thursday</span>
+              <span class="time">12:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Friday</span>
+              <span class="time">12:00 PM – 11:30 PM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Saturday</span>
+              <span class="time">12:00 PM – 1:00 AM</span>
+            </div>
+            <div class="hours-row">
+              <span class="day">Sunday</span>
+              <span class="time">12:00 PM – 1:00 AM</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="reservation-form-card reveal-right">
+          <h3 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; margin-bottom: 8px; color: var(--text-primary);">Make a Reservation</h3>
+          <p style="font-size: 0.9rem; color: var(--text-muted); margin-bottom: 28px;">Fill in the details and we'll hold your table.</p>
+
+          <form id="reservationForm">
+            <div class="form-group">
+              <label for="resName">Full Name</label>
+              <input type="text" id="resName" placeholder="e.g. Arjun Mehra" required>
+            </div>
+
+            <div class="form-group">
+              <label for="resPhone">Phone Number</label>
+              <input type="tel" id="resPhone" placeholder="+91 98XXX XXXXX" required>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Date</label>
+                <input type="date" id="resDate" required>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Time</label>
+                <select id="resTime" required>
+                  <option value="">Select Time</option>
+                  <option value="12:00 PM">12:00 PM</option>
+                  <option value="12:30 PM">12:30 PM</option>
+                  <option value="1:00 PM">1:00 PM</option>
+                  <option value="1:30 PM">1:30 PM</option>
+                  <option value="2:00 PM">2:00 PM</option>
+                  <option value="6:00 PM">6:00 PM</option>
+                  <option value="6:30 PM">6:30 PM</option>
+                  <option value="7:00 PM">7:00 PM</option>
+                  <option value="7:30 PM">7:30 PM</option>
+                  <option value="8:00 PM">8:00 PM</option>
+                  <option value="8:30 PM">8:30 PM</option>
+                  <option value="9:00 PM">9:00 PM</option>
+                  <option value="9:30 PM">9:30 PM</option>
+                  <option value="10:00 PM">10:00 PM</option>
+                  <option value="10:30 PM">10:30 PM</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="resGuests">Number of Guests</label>
+              <select id="resGuests" required>
+                <option value="">Select Guests</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7-8">7–8 Guests</option>
+                <option value="9+">9+ Guests (Large Party)</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-primary form-submit-btn">
+              ✨ Confirm Reservation
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT SECTION
+       ============================================ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Get in Touch</span>
+        <h2 class="section-title">Find Us</h2>
+        <p class="section-subtitle">Drop by, call, or message — we'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-cards reveal-left">
+          <div class="contact-card">
+            <div class="contact-card-icon">📍</div>
+            <div>
+              <h4>Visit Us</h4>
+              <p>Urban Tandoor Collective<br>2nd Floor, Lane 3, Hauz Khas Village<br>New Delhi 110016, India</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">📞</div>
+            <div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+919812345678">+91 98123 45678</a></p>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">Available during opening hours</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-card-icon">✉️</div>
+            <div>
+              <h4>Email Us</h4>
+              <p><a href="mailto:hello@urbantandoor.in">hello@urbantandoor.in</a></p>
+              <p style="font-size: 0.8rem; color: var(--text-muted);">We reply within 24 hours</p>
+            </div>
+          </div>
+
+          <!-- WhatsApp Button -->
+          <button id="whatsappBtn" class="btn btn-whatsapp" style="margin-top: 8px; width: 100%; text-align: center;">
+            💬 Chat on WhatsApp
+          </button>
+        </div>
+
+        <div class="contact-map reveal-right">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.8986029069147!2d77.19368931508!3d28.553539982437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce26c0b0c0001%3A0x3fd3c40e1a119a77!2sHauz%20Khas%20Village!5e0!3m2!1sen!2sin!4v1680000000000!5m2!1sen!2sin"
+                  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                  title="Urban Tandoor Collective Map Location"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="margin-bottom: 4px;">
+            <div class="nav-logo-icon">🔥</div>
+            <div class="nav-logo-text">Urban <span>Tandoor</span></div>
+          </a>
+          <p>Where Street Meets Signature Flavours. Experience Delhi's boldest fusion dining in the heart of Hauz Khas Village.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Instagram" title="Instagram">📸</a>
+            <a href="#" aria-label="Facebook" title="Facebook">👤</a>
+            <a href="#" aria-label="Twitter" title="Twitter">🐦</a>
+            <a href="#" aria-label="YouTube" title="YouTube">▶️</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#menu">Our Menu</a></li>
+            <li><a href="#experience">Experiences</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#reservation">Reservations</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="tel:+919812345678">+91 98123 45678</a></li>
+            <li><a href="mailto:hello@urbantandoor.in">hello@urbantandoor.in</a></li>
+            <li><a href="#">Hauz Khas Village, Delhi</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="#">@urbantandoor</a></li>
+            <li><a href="#">#UrbanTandoorCollective</a></li>
+            <li><a href="#">#BoldFlavoursUrbanVibes</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2024 Urban Tandoor Collective. All rights reserved.</p>
+        <span class="footer-demo-note">⚡ This is a demo website created for portfolio purposes</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================
+       MODAL POPUP
+       ============================================ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+      <div class="modal-icon" id="modalIcon">✓</div>
+      <h3 id="modalTitle">Success!</h3>
+      <p id="modalMessage">Your action was completed successfully.</p>
+      <button class="btn btn-primary modal-close-btn" id="modalCloseBtn">
+        Got it!
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
